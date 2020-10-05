@@ -1,0 +1,23 @@
+{
+  "name": "07-tooling",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "npx sls invoke test --path test",
+    "start": "npx nodemon --exec npm run offline",
+    "offline": "npx sls offline start --host 0.0.0.0"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "nodemon": "^2.0.4",
+    "serverless": "^2.4.0",
+    "serverless-offline": "^6.8.0"
+  },
+  "dependencies": {
+    "D": "^1.0.0",
+    "serverless-mocha-plugin": "^1.12.0"
+  }
+}
